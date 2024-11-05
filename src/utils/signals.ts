@@ -8,10 +8,10 @@ type SignalLike = {
 };
 
 /** Returns a selector that updates whenever any `signals` fire. */
-export const signals = <T>(selector: Selector<T>, signals: SignalLike[]): [Selector<T>, Cleanup] => {
-	const state = atom(peek(selector));
+export const signals = <T>(source: Selector<T>, signals: SignalLike[]): [Selector<T>, Cleanup] => {
+	const state = atom(peek(source));
 
-	const update = () => state(selector());
+	const update = () => state(source());
 
 	const connections = signals.map(signal => signal.Connect(update));
 
