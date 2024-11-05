@@ -6,3 +6,4 @@ export { signals } from "./utils/signals";
 export { children } from "./utils/children";
 export { last } from "./utils/last";
 export { tagged } from "./utils/tagged";
+export { attribute } from "./utils/attribute";
