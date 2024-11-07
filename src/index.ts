@@ -7,3 +7,4 @@ export { children } from "./utils/children";
 export { last } from "./utils/last";
 export { tagged } from "./utils/tagged";
 export { attribute } from "./utils/attribute";
+export { derive } from "./utils/derive";
