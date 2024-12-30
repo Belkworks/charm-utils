@@ -1,23 +1,24 @@
 {
-  "name": "@rbxts/charm-utils",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@belkworks/charm-utils",
+  "version": "0.0.1",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
     "prepublishOnly": "pnpm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "types": "out/index.d.ts",
   "files": [
     "out",
     "!**/*.tsbuildinfo"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Belkworks/charm-utils.git"
   },
   "devDependencies": {
     "@rbxts/compiler-types": "3.0.0-types.0",
