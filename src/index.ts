@@ -8,3 +8,4 @@ export { last } from "./utils/last";
 export { tagged } from "./utils/tagged";
 export { attribute } from "./utils/attribute";
 export { derive } from "./utils/derive";
+export { players } from "./utils/players";
