@@ -1,6 +1,6 @@
 {
   "name": "@belkworks/charm-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
