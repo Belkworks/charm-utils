@@ -1,9 +1,9 @@
-import { listen, peek, subscribe } from "@rbxts/charm";
+import { listen, untracked, subscribe } from "@rbxts/charm";
 import { Selector } from "../types";
 
 /** Returns a promise that resolves when the result of calling `predicate` is `true` */
 export function promise(predicate: Selector<boolean>): Promise<void> {
-	return peek(predicate)
+	return untracked(predicate)
 		? Promise.resolve()
 		: new Promise((resolve, _, onCancel) => {
 				const cleanup = subscribe(predicate, state => {
